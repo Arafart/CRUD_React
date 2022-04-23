@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.containers {
+  width: 100%;
+
+  margin-top: 15rem;
+  bottom: 0;
+  background: #222;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react-logo {
+  display: inline-block;
+  border-radius: 100%;
+  border: 10px solid #00d8ff;
+
+  animation-name: rotate;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.react-logo,
+.react-logo:before,
+.react-logo:after {
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 70px;
+  border-radius: 50%;
+  border: 10px solid #00d8ff;
+}
+
+.nucleo,
+.react-logo,
+.react-logo:before,
+.react-logo:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nucleo {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #00b7ff;
+}
+
+.react-logo:before,
+.react-logo:after {
+  content: "";
+}
+
+.react-logo:after {
+  transform: rotate(-57deg);
+}
+
+.react-logo:before {
+  transform: rotate(57deg);
+}
+
+.titles {
+  font-size: 60px;
+  background: #222;
+  color: #00d8ff;
+  width: 250px;
+  margin: 2px auto;
+  text-align: center;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
